@@ -11,6 +11,7 @@ A comprehensive Playwright-based tool to extract customer stories from Microsoft
 - 🛡️ **Mandatory URL validation** - Prevents accidental runs with unintended URLs
 - 📊 **Comprehensive data extraction** - Company info, story titles, industries, and Microsoft products
 - 🎪 **Playwright-powered** - Robust web scraping with error handling
+- 🌐 **Static Web App** - Interactive web interface to browse and explore customer stories
 
 ## Prerequisites
 
@@ -44,7 +45,49 @@ npm run extract:paginated
 # 3. Check results
 # - JSON: microsoft-customer-stories.json
 # - Images: media/ folder
+
+# 4. View stories in web app
+# Open index.html in your browser or serve locally:
+python3 -m http.server 8000
+# Then visit http://localhost:8000
 ```
+
+## Static Web App
+
+The repository includes a **static web application** (`index.html`) that provides an interactive interface to browse and explore the extracted customer stories.
+
+### Features
+- 📱 **Responsive design** - Works on desktop, tablet, and mobile devices
+- 🔍 **Search functionality** - Search by company name, industry, or story title
+- 🏭 **Industry filtering** - Filter stories by industry categories
+- 🖼️ **Local images** - Uses downloaded images from the `media/` directory
+- 🔗 **Clickable tiles** - Story cards link directly to Microsoft's original story pages
+- 📊 **Live statistics** - Shows filtered story counts and metadata
+
+### Usage
+1. Ensure you have extracted stories using the scraper (see Quick Start above)
+2. **Important**: You must serve the files via an HTTP server (cannot open index.html directly in browser due to CORS restrictions)
+3. Serve the files locally using one of these methods:
+   ```bash
+   # Using Python (recommended)
+   python3 -m http.server 8000
+   
+   # Using Node.js (if you have http-server installed)
+   npx http-server
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
+4. Visit the local server URL (e.g., `http://localhost:8000`)
+5. Browse, search, and filter stories using the web interface
+6. Click on any story tile to open the full story on Microsoft's website
+
+⚠️ **Important Note**: Do not open `index.html` directly in your browser by double-clicking it. This will cause CORS errors and the JSON data won't load. Always use an HTTP server as shown above.
+
+### Web App Structure
+- `index.html` - Main HTML structure
+- `styles.css` - CSS styling with Microsoft-inspired design
+- `script.js` - JavaScript for loading JSON data and interactive features
 
 ## Usage
 
