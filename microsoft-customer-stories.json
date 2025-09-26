@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "totalPages": 1,
+    "totalStories": 6,
+    "extractionDate": "2025-09-26T07:02:36.244Z",
+    "baseUrl": "https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc",
+    "storiesPerPage": {
+      "1": 6
+    }
+  },
+  "stories": [
+    {
+      "page": 1,
+      "positionOnPage": 2,
+      "globalId": "p1_2",
+      "title": "From 10 minutes to 30 seconds, how CSOP is redefining asset management with Microsoft Azure AI",
+      "industry": "Financial Services",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/24963-csop-asset-management-azure-ai-foundry",
+      "company": {
+        "name": "CSOP Asset Management",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/24963_CSOP%20Asset%20Management%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/csop_asset_management_p1_2_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/24963_CSOP%20Asset%20Management%20Header%20Image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "",
+        "headerImageLocal": "media/csop_asset_management_p1_2_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Azure AI Foundry",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/AzureAIFoundry_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/csop_asset_management_p1_2_product_azure_ai_foundry.jpg"
+        },
+        {
+          "name": "Azure AI Service",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/AzureAIFoundry_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/csop_asset_management_p1_2_product_azure_ai_service.jpg"
+        },
+        {
+          "name": "Azure OpenAI",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/AzureOpenAIService_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/csop_asset_management_p1_2_product_azure_openai.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.848Z"
+    },
+    {
+      "page": 1,
+      "positionOnPage": 3,
+      "globalId": "p1_3",
+      "title": "The University of Hong Kong leverages Microsoft 365 Copilot and Copilot Studio to build a more dynamic learning environment",
+      "industry": "Education",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/21598-the-university-of-hong-kong-microsoft-365-copilot",
+      "company": {
+        "name": "The University of Hong Kong",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/21598_The%20University%20of%20Hong%20Kong%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/the_university_of_hong_kong_p1_3_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/21598_The%20University%20of%20Hong%20Kong%20Header%20Image1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "",
+        "headerImageLocal": "media/the_university_of_hong_kong_p1_3_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Microsoft 365 Copilot",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/M365Copilot_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/the_university_of_hong_kong_p1_3_product_microsoft_365_copilot.jpg"
+        },
+        {
+          "name": "Microsoft Copilot Studio",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/CopilotStudio_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/the_university_of_hong_kong_p1_3_product_microsoft_copilot_studio.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.848Z"
+    },
+    {
+      "page": 1,
+      "positionOnPage": 4,
+      "globalId": "p1_4",
+      "title": "Cathay leverages Microsoft 365 Copilot to move its employees to greater heights",
+      "industry": "Automotive, Mobility, and Transportation",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/19212-cathay-pacific-airways-limited-microsoft-365-copilot",
+      "company": {
+        "name": "Cathay Pacific Airways Limited",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/19212_Cathay%20Pacific%20Airways%20Limited%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/cathay_pacific_airways_limited_p1_4_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/19212_Cathay%20Pacific%20Airways%20Limited%20Header%20Image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "",
+        "headerImageLocal": "media/cathay_pacific_airways_limited_p1_4_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Microsoft 365",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/M365_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/cathay_pacific_airways_limited_p1_4_product_microsoft_365.jpg"
+        },
+        {
+          "name": "Microsoft Copilot",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Copilot_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/cathay_pacific_airways_limited_p1_4_product_microsoft_copilot.jpg"
+        },
+        {
+          "name": "Microsoft 365 Copilot",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/M365Copilot_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/cathay_pacific_airways_limited_p1_4_product_microsoft_365_copilot.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.848Z"
+    },
+    {
+      "page": 1,
+      "positionOnPage": 5,
+      "globalId": "p1_5",
+      "title": "QNET increases security response efficiency 60 percent with Microsoft Security Solutions",
+      "industry": "Retail and Consumer Goods",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/1797704796946869974-qnet-microsoft-copilot-for-security-retailers-en-hong-kong-sar",
+      "company": {
+        "name": "",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/QNET%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/unknown_p1_5_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/QNET%20Header%20Image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "Laptop Screen open to QNET products page",
+        "headerImageLocal": "media/unknown_p1_5_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Microsoft Entra ID",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Entra_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_5_product_microsoft_entra_id.jpg"
+        },
+        {
+          "name": "Microsoft Sentinel",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Sentinel_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_5_product_microsoft_sentinel.jpg"
+        },
+        {
+          "name": "Microsoft Security Copilot",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Copilot_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_5_product_microsoft_security_copilot.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.849Z"
+    },
+    {
+      "page": 1,
+      "positionOnPage": 6,
+      "globalId": "p1_6",
+      "title": "CSOP Asset Management Limited strengthens the investment ecosystem with Azure OpenAI Service, boosts information retrieval by 20%",
+      "industry": "Commercial Other Industries",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/1762470866168552144-csopasset-azure-other-unsegmented-en-hong-kong",
+      "company": {
+        "name": "",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/CSOP%20ASSET%20MANAGEMENT%20LTD%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/unknown_p1_6_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/CSOP%20ASSET%20MANAGEMENT%20LTD%20Header%20Image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "",
+        "headerImageLocal": "media/unknown_p1_6_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Azure",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Azure_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_6_product_azure.jpg"
+        },
+        {
+          "name": "Azure OpenAI",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/AzureOpenAIService_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_6_product_azure_openai.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.849Z"
+    },
+    {
+      "page": 1,
+      "positionOnPage": 7,
+      "globalId": "p1_7",
+      "title": "HelloTalk: The world's largest language exchange platform empowers language learners with Azure AI",
+      "industry": "Education",
+      "storyUrl": "https://www.microsoft.com/en/customers/story/1615006392710416983-hellotalk-azure-ai-education-china",
+      "company": {
+        "name": "",
+        "logo": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/HelloTalk%20Logo?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "logoLocal": "media/unknown_p1_7_logo.jpg"
+      },
+      "media": {
+        "headerImage": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/HelloTalk%20Header%20Image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=75&fit=constrain",
+        "headerImageAlt": "",
+        "headerImageLocal": "media/unknown_p1_7_header.jpg"
+      },
+      "microsoftProducts": [
+        {
+          "name": "Azure",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Azure_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_7_product_azure.jpg"
+        },
+        {
+          "name": "Azure AI Service",
+          "icon": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/AzureAIFoundry_17x17",
+          "iconAlt": "",
+          "iconLocal": "media/unknown_p1_7_product_azure_ai_service.jpg"
+        }
+      ],
+      "extractedAt": "2025-09-26T07:02:33.849Z"
+    }
+  ]
+}
