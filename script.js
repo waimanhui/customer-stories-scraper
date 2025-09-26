@@ -22,7 +22,18 @@ class CustomerStoriesApp {
             this.renderStories();
             this.updateStats();
         } catch (error) {
-            this.showError('Failed to load customer stories. Please check if the JSON file exists.');
+            if (error.message === 'CORS_ERROR') {
+                this.showError('Cannot load customer stories when opening the file directly in browser. Please serve the files using an HTTP server:<br><br>' +
+                    '<strong>Method 1 (Python):</strong><br>' +
+                    '<code>python3 -m http.server 8000</code><br>' +
+                    'Then visit: <a href="http://localhost:8000" target="_blank">http://localhost:8000</a><br><br>' +
+                    '<strong>Method 2 (Node.js):</strong><br>' +
+                    '<code>npx http-server</code><br><br>' +
+                    '<strong>Method 3 (PHP):</strong><br>' +
+                    '<code>php -S localhost:8000</code>');
+            } else {
+                this.showError('Failed to load customer stories. Please check if the JSON file exists and try serving the files using an HTTP server.');
+            }
             console.error('Error initializing app:', error);
         }
     }
@@ -53,6 +64,10 @@ class CustomerStoriesApp {
             }
             
         } catch (error) {
+            // Check if this is a CORS error (common when opening file:// directly)
+            if (error.message.includes('fetch')) {
+                throw new Error('CORS_ERROR');
+            }
             throw new Error(`Failed to load data: ${error.message}`);
         }
     }

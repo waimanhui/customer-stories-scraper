@@ -66,9 +66,10 @@ The repository includes a **static web application** (`index.html`) that provide
 
 ### Usage
 1. Ensure you have extracted stories using the scraper (see Quick Start above)
-2. Open `index.html` in a web browser, or serve it locally:
+2. **Important**: You must serve the files via an HTTP server (cannot open index.html directly in browser due to CORS restrictions)
+3. Serve the files locally using one of these methods:
    ```bash
-   # Using Python
+   # Using Python (recommended)
    python3 -m http.server 8000
    
    # Using Node.js (if you have http-server installed)
@@ -77,9 +78,11 @@ The repository includes a **static web application** (`index.html`) that provide
    # Using PHP
    php -S localhost:8000
    ```
-3. Visit the local server URL (e.g., `http://localhost:8000`)
-4. Browse, search, and filter stories using the web interface
-5. Click on any story tile to open the full story on Microsoft's website
+4. Visit the local server URL (e.g., `http://localhost:8000`)
+5. Browse, search, and filter stories using the web interface
+6. Click on any story tile to open the full story on Microsoft's website
+
+⚠️ **Important Note**: Do not open `index.html` directly in your browser by double-clicking it. This will cause CORS errors and the JSON data won't load. Always use an HTTP server as shown above.
 
 ### Web App Structure
 - `index.html` - Main HTML structure
