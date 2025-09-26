@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Customer Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Microsoft Customer Stories</h1>
+            <p class="header-subtitle">Discover how organizations worldwide are transforming their businesses with Microsoft solutions</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search stories by company, industry, or title..." class="search-input">
+                </div>
+                <div class="filter-container">
+                    <select id="industryFilter" class="filter-select">
+                        <option value="">All Industries</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="stats" id="statsContainer">
+                <span class="stats-item">Loading stories...</span>
+            </div>
+
+            <div class="stories-grid" id="storiesGrid">
+                <!-- Stories will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Microsoft Customer Stories. Data extracted on <span id="extractionDate"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
