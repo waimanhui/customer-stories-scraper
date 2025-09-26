@@ -1,0 +1,58 @@
+name: Monthly Microsoft Customer Stories Extraction
+
+on:
+  schedule:
+    # Run monthly on the 1st day of each month at 7:00 AM UTC
+    - cron: '0 7 1 * *'
+  workflow_dispatch: # Allow manual triggering
+    inputs:
+      base_url:
+        description: 'Base URL for Microsoft Customer Stories (optional)'
+        required: false
+        type: string
+
+jobs:
+  extract-stories:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install Playwright browsers
+      run: npx playwright install --with-deps
+      
+    - name: Run Microsoft Customer Stories extraction
+      run: npx playwright test tests/microsoft-customers-extraction.spec.js --grep "Extract all stories with pagination support"
+      env:
+        BASE_URL: ${{ github.event.inputs.base_url || 'https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc' }}
+      
+    - name: Upload extracted data as artifact
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: customer-stories-data-${{ github.run_number }}
+        path: |
+          microsoft-customer-stories.json
+          media/
+        retention-days: 30
+        
+    - name: Commit and push changes
+      if: success()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add microsoft-customer-stories.json media/
+        git diff --staged --quiet || git commit -m "Monthly update: customer stories data - $(date +'%Y-%m-%d %H:%M:%S')"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

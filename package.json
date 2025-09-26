@@ -1,0 +1,31 @@
+{
+  "name": "microsoft-customer-stories-scraper",
+  "version": "1.0.0",
+  "description": "Playwright script to extract Microsoft customer stories",
+  "main": "extract-microsoft-customers.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "extract": "node extract-microsoft-customers.js",
+    "extract:single": "playwright test tests/microsoft-customers-extraction.spec.js --grep \"Extract customer stories from Microsoft customers page\"",
+    "extract:paginated": "playwright test tests/microsoft-customers-extraction.spec.js --grep \"Extract all stories with pagination support\"",
+    "extract:custom": "echo \"BASE_URL is required. Usage: $env:BASE_URL='your-url-here'; npm run extract:paginated\"",
+    "extract:example": "echo \"Example: $env:BASE_URL='https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc'; npm run extract:paginated\"",
+    "install-browsers": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "scraping",
+    "microsoft",
+    "customer-stories",
+    "data-extraction"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}

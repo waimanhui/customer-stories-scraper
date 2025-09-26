@@ -1,0 +1,58 @@
+{
+  "extraction": {
+    "baseUrl": "https://www.microsoft.com/en-us/customers/search/",
+    "filters": {
+      "businessNeed": "artificial-intelligence",
+      "region": "asia/hong-kong-sar",
+      "sortBy": "PublishedDate+Desc"
+    },
+    "pagination": {
+      "maxPages": 10,
+      "enabled": true,
+      "delayBetweenPages": 2000
+    },
+    "timeouts": {
+      "navigation": 30000,
+      "elementWait": 15000,
+      "contentLoad": 3000
+    },
+    "browser": {
+      "headless": true,
+      "slowMo": 500
+    }
+  },
+  "selectors": {
+    "storyCard": ".card--style-customer-story",
+    "dynamicContent": ".dynamic-content__content",
+    "companyLogo": ".media__slot img",
+    "headerImage": ".card__media .ocr-img img",
+    "industry": ".block-feature__eyebrow .block-feature__label",
+    "title": ".block-feature__title",
+    "storyLink": "a[href*=\"/customers/story/\"]",
+    "products": ".related-products__product",
+    "productLabel": ".label",
+    "nextPageButton": "#right-arrow:not(.disabled)",
+    "resultsCount": ".number-of-results",
+    "filterPills": ".pill-bar__item .pill-bar__item__label"
+  },
+  "output": {
+    "directory": "test-results",
+    "formats": ["json", "csv"],
+    "includeTimestamp": true,
+    "saveMetadata": true
+  },
+  "dataExtraction": {
+    "trackingAttributes": [
+      "data-bi-cn",
+      "data-bi-ecn", 
+      "data-bi-hn",
+      "data-bi-ehn",
+      "data-bi-sn",
+      "data-bi-compnm",
+      "data-bi-ct",
+      "data-bi-view"
+    ],
+    "requiredFields": ["title", "storyUrl", "industry"],
+    "validateUrls": true
+  }
+}
