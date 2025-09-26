@@ -9,7 +9,7 @@ A comprehensive Playwright-based tool to extract customer stories from Microsoft
 - 📄 **JSON output with relative image paths** - Portable dataset with organized image references
 - 🔄 **Monthly automated extraction** via GitHub Actions workflow
 - 🛡️ **Mandatory URL validation** - Prevents accidental runs with unintended URLs
-- 📊 **Comprehensive data extraction** - Company info, story titles, industries, and Microsoft products
+- 📊 **Comprehensive data extraction** - Story titles, industries, company logos, and Microsoft products
 - 🎪 **Playwright-powered** - Robust web scraping with error handling
 - 🌐 **Static Web App** - Interactive web interface to browse and explore customer stories
 

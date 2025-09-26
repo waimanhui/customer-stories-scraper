@@ -103,7 +103,6 @@ class CustomerStoriesApp {
         this.filteredStories = this.stories.filter(story => {
             const matchesSearch = !searchTerm || 
                 story.title.toLowerCase().includes(searchTerm) ||
-                story.company.name.toLowerCase().includes(searchTerm) ||
                 story.industry.toLowerCase().includes(searchTerm);
             
             const matchesIndustry = !selectedIndustry || story.industry === selectedIndustry;
@@ -153,14 +152,13 @@ class CustomerStoriesApp {
                     <img src="${headerImage}" alt="${story.media?.headerImageAlt || story.title}" class="story-header-image" 
                          onerror="this.src='./media/placeholder-header.jpg'">
                     <div class="story-company-logo">
-                        <img src="${companyLogo}" alt="${story.company?.name || 'Company Logo'}" class="company-logo"
+                        <img src="${companyLogo}" alt="Company Logo" class="company-logo"
                              onerror="this.src='./media/placeholder-logo.jpg'">
                     </div>
                 </div>
                 <div class="story-content">
                     <h3 class="story-title">${this.escapeHtml(story.title)}</h3>
                     <div class="story-meta">
-                        <span class="story-company">${this.escapeHtml(story.company?.name || 'Unknown Company')}</span>
                         ${story.industry ? `<span class="story-industry">${this.escapeHtml(story.industry)}</span>` : ''}
                     </div>
                     ${products.length > 0 ? `

@@ -11,7 +11,8 @@
     "extract:paginated": "playwright test tests/microsoft-customers-extraction.spec.js --grep \"Extract all stories with pagination support\"",
     "extract:custom": "echo \"BASE_URL is required. Usage: $env:BASE_URL='your-url-here'; npm run extract:paginated\"",
     "extract:example": "echo \"Example: $env:BASE_URL='https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc'; npm run extract:paginated\"",
-    "install-browsers": "playwright install"
+    "install-browsers": "playwright install",
+    "serve": "python -m http.server 8000"
   },
   "keywords": [
     "playwright",

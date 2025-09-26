@@ -83,21 +83,15 @@ function getImageExtension(url, contentType = '') {
 }
 
 /**
- * Generate safe filename from company name and other identifiers
- * @param {string} companyName - Company name
+ * Generate safe filename from globalId and other identifiers (no company name)
+ * @param {string} companyName - Company name (unused, kept for compatibility)
  * @param {string} globalId - Global ID of the story
  * @param {string} type - Type of image (logo, header, product-icon)
  * @param {string} extension - File extension
  * @returns {string} - Safe filename
  */
 function generateImageFilename(companyName, globalId, type, extension) {
-  const safeName = companyName
-    .replace(/[^a-zA-Z0-9]/g, '_')
-    .replace(/__+/g, '_')
-    .replace(/^_|_$/g, '')
-    .toLowerCase() || 'unknown';
-  
-  return `${safeName}_${globalId}_${type}.${extension}`;
+  return `${globalId}_${type}.${extension}`;
 }
 
 /**
@@ -192,9 +186,8 @@ test.describe('Microsoft Customer Stories Extraction', () => {
                 industry: industryElement ? industryElement.textContent.replace('Industry: ', '').trim() : '',
                 storyUrl: storyLink.getAttribute('href'),
                 
-                // Company information with logo
+                // Company information with logo only (no name extraction)
                 company: {
-                  name: logoImg ? logoImg.getAttribute('alt') || '' : '',
                   logo: logoImg ? logoImg.getAttribute('src') || '' : ''
                 },
                 
@@ -316,13 +309,13 @@ test.describe('Microsoft Customer Stories Extraction', () => {
     
     for (let i = 0; i < allStories.length; i++) {
       const story = allStories[i];
-      console.log(`Processing images for story ${i + 1}/${allStories.length}: ${story.company?.name || 'Unknown'}`);
+      console.log(`Processing images for story ${i + 1}/${allStories.length}: ${story.globalId}`);
       
       try {
         // Download company logo
         if (story.company?.logo) {
           const logoExtension = getImageExtension(story.company.logo);
-          const logoFilename = generateImageFilename(story.company.name, story.globalId, 'logo', logoExtension);
+          const logoFilename = generateImageFilename('', story.globalId, 'logo', logoExtension);
           const logoPath = path.join(mediaDir, logoFilename);
           
           try {
@@ -330,14 +323,14 @@ test.describe('Microsoft Customer Stories Extraction', () => {
             story.company.logoLocal = `media/${logoFilename}`;
             console.log(`  Downloaded logo: ${logoFilename}`);
           } catch (error) {
-            console.warn(`  Failed to download logo for ${story.company.name}: ${error.message}`);
+            console.warn(`  Failed to download logo for story ${story.globalId}: ${error.message}`);
           }
         }
         
         // Download header image
         if (story.media?.headerImage) {
           const headerExtension = getImageExtension(story.media.headerImage);
-          const headerFilename = generateImageFilename(story.company.name, story.globalId, 'header', headerExtension);
+          const headerFilename = generateImageFilename('', story.globalId, 'header', headerExtension);
           const headerPath = path.join(mediaDir, headerFilename);
           
           try {
@@ -345,7 +338,7 @@ test.describe('Microsoft Customer Stories Extraction', () => {
             story.media.headerImageLocal = `media/${headerFilename}`;
             console.log(`  Downloaded header: ${headerFilename}`);
           } catch (error) {
-            console.warn(`  Failed to download header image for ${story.company.name}: ${error.message}`);
+            console.warn(`  Failed to download header image for story ${story.globalId}: ${error.message}`);
           }
         }
         
@@ -355,7 +348,7 @@ test.describe('Microsoft Customer Stories Extraction', () => {
           if (typeof product === 'object' && product.icon) {
             const iconExtension = getImageExtension(product.icon);
             const productSafeName = product.name.replace(/[^a-zA-Z0-9]/g, '_').toLowerCase();
-            const iconFilename = generateImageFilename(story.company.name, story.globalId, `product_${productSafeName}`, iconExtension);
+            const iconFilename = generateImageFilename('', story.globalId, `product_${productSafeName}`, iconExtension);
             const iconPath = path.join(mediaDir, iconFilename);
             
             try {
@@ -374,7 +367,6 @@ test.describe('Microsoft Customer Stories Extraction', () => {
     
     console.log(`\n=== PAGINATION EXTRACTION COMPLETE ===`);
     console.log(`Total stories across ${currentPage} pages: ${allStories.length}`);
-    console.log(`Unique companies: ${new Set(allStories.map(s => s.company?.name || '')).size}`);
     
     // Log pagination detection details
     if (allStories.length > 0) {
