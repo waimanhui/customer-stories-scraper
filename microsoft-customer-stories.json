@@ -2,7 +2,7 @@
   "metadata": {
     "totalPages": 1,
     "totalStories": 6,
-    "extractionDate": "2025-09-26T11:10:32.108Z",
+    "extractionDate": "2025-10-01T07:25:37.608Z",
     "baseUrl": "https://www.microsoft.com/en-us/customers/search/?filters=business-need%3Aartificial-intelligence%2Cregion%3Aasia%2Fhong-kong-sar&sortBy=PublishedDate+Desc",
     "storiesPerPage": {
       "1": 6
@@ -45,7 +45,7 @@
           "iconLocal": "media/p1_2_product_azure_openai.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     },
     {
       "page": 1,
@@ -77,7 +77,7 @@
           "iconLocal": "media/p1_3_product_microsoft_copilot_studio.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     },
     {
       "page": 1,
@@ -115,7 +115,7 @@
           "iconLocal": "media/p1_4_product_microsoft_365_copilot.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     },
     {
       "page": 1,
@@ -153,7 +153,7 @@
           "iconLocal": "media/p1_5_product_microsoft_security_copilot.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     },
     {
       "page": 1,
@@ -185,7 +185,7 @@
           "iconLocal": "media/p1_6_product_azure_openai.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     },
     {
       "page": 1,
@@ -217,7 +217,7 @@
           "iconLocal": "media/p1_7_product_azure_ai_service.jpg"
         }
       ],
-      "extractedAt": "2025-09-26T11:10:29.492Z"
+      "extractedAt": "2025-10-01T07:25:31.981Z"
     }
   ]
 }
